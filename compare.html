@@ -1,74 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="DataCrafted vs competitors: compare Python data tools pricing, features, and value. One-time purchase vs monthly subscriptions.">
-<title>DataCrafted vs The Rest — Why Buy Once Beats Subscriptions</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,sans-serif;background:#0f0f1a;color:#e0e0e0;line-height:1.6;max-width:1000px;margin:0 auto;padding:40px 20px}
-h1{color:#e94560;font-size:2.5em;margin-bottom:5px}
-h2{color:#fff;margin:30px 0 15px}
-.subtitle{color:#888;margin-bottom:30px;font-size:1.1em}
-table{width:100%;border-collapse:collapse;margin:20px 0;background:#1a1a2e;border-radius:12px;overflow:hidden}
-th{background:#e94560;color:#fff;padding:14px;text-align:left;font-size:.9em}
-td{padding:12px 14px;border-bottom:1px solid #2a2a4a}
-tr:last-child td{border-bottom:none}
-tr:hover{background:#2a2a4a}
-.win{color:#4ecca3;font-weight:700}
-.lose{color:#e94560}
-.highlight{background:#2a1a3e!important}
-.btn{display:inline-block;padding:14px 36px;background:#e94560;color:#fff;border-radius:8px;text-decoration:none;font-weight:700;margin:20px 0;font-size:1.1em}
-.btn:hover{background:#c23152}
-.note{background:#1a2a1e;border-left:4px solid #4ecca3;padding:16px;border-radius:0 8px 8px 0;margin:20px 0}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Free CSV Analyzer Tools in 2026 — Comparison & Reviews</title>
+    <meta name="description" content="Compare the best free CSV analyzer tools. Terminal CLI, Python libraries, and open-source alternatives to Excel. 150-line Python script vs pandas vs csvkit.">
+    <meta property="og:title" content="Best Free CSV Analyzers — 2026 Comparison">
+    <meta property="og:description" content="Hands-on comparison of free CSV analysis tools. Terminal CLI vs Python vs browser-based.">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{background:#0d0d1a;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.7;padding:20px;max-width:900px;margin:0 auto}
+        h1{color:#fff;font-size:2em;margin:30px 0 10px}
+        h2{color:#e94560;font-size:1.4em;margin:30px 0 10px;border-bottom:2px solid #e94560;padding-bottom:5px}
+        h3{color:#fff;margin:20px 0 8px}
+        a{color:#e94560;text-decoration:none}
+        a:hover{text-decoration:underline}
+        table{width:100%;border-collapse:collapse;margin:20px 0;background:#1a1a2e;border-radius:8px;overflow:hidden}
+        th{background:#e94560;color:#fff;padding:12px;text-align:left;font-weight:700}
+        td{padding:12px;border-bottom:1px solid #2a2a4a}
+        tr:hover{background:#1f1f3a}
+        .hero{text-align:center;padding:60px 20px;background:linear-gradient(135deg,#1a1a2e,#0d0d1a);border-radius:12px;margin:20px 0;border:1px solid #e9456033}
+        .hero h1{font-size:2.4em;margin-bottom:15px;color:#fff}
+        .hero p{font-size:1.2em;color:#aaa;max-width:600px;margin:0 auto}
+        .winner{background:#1a3a1a;border-left:4px solid #6bcb77;padding:15px;border-radius:4px;margin:15px 0}
+        .cta{background:linear-gradient(135deg,#e94560,#c23152);padding:25px;border-radius:12px;text-align:center;margin:30px 0}
+        .cta h2{color:#fff;border:none;margin:0 0 10px}
+        .cta a{display:inline-block;background:#fff;color:#e94560;padding:12px 30px;border-radius:8px;font-weight:700;font-size:1.1em;margin-top:10px}
+        .pro{color:#6bcb77;font-weight:700}
+        .con{color:#e94560;font-weight:700}
+        .tag{display:inline-block;background:#2a2a4a;padding:3px 10px;border-radius:20px;font-size:.85em;margin:2px}
+    </style>
 </head>
 <body>
 
-<h1>DataCrafted vs The Competition</h1>
-<p class="subtitle">Why pay every month when you can own your tools forever?</p>
-
-<h2>💰 Pricing Comparison</h2>
-<table>
-<tr><th>Tool Category</th><th>DataCrafted</th><th>SaaS Alternative</th><th>You Save</th></tr>
-<tr class="highlight"><td>CSV Analysis</td><td class="win">$19.99 once</td><td>Tableau $75/mo</td><td class="win">$880/year</td></tr>
-<tr><td>Data Cleaning</td><td class="win">$29.99 once</td><td>OpenRefine (free but complex)</td><td class="win">Time + frustration</td></tr>
-<tr class="highlight"><td>SQL Generation</td><td class="win">$29.99 once</td><td>ChatGPT Pro $20/mo</td><td class="win">$240/year</td></tr>
-<tr><td>Web Scraping</td><td class="win">$29.99 once</td><td>Apify $49/mo</td><td class="win">$588/year</td></tr>
-<tr class="highlight"><td>API Testing</td><td class="win">$19.99 once</td><td>Postman Pro $19/mo</td><td class="win">$228/year</td></tr>
-<tr><td>Report Building</td><td class="win">$34.99 once</td><td>Google Looker $60/mo</td><td class="win">$720/year</td></tr>
-<tr class="highlight"><td>Task Scheduling</td><td class="win">$19.99 once</td><td>Zapier $30/mo</td><td class="win">$360/year</td></tr>
-<tr><td><strong>ALL 14 TOOLS</strong></td><td class="win"><strong>$79.99 once</strong></td><td><strong>$273+/month</strong></td><td class="win"><strong>$3,200+/year</strong></td></tr>
-</table>
-
-<h2>🔍 Feature Comparison</h2>
-<table>
-<tr><th>Feature</th><th>DataCrafted</th><th>SaaS Tools</th></tr>
-<tr class="highlight"><td>One-time payment</td><td class="win">✅ Yes</td><td class="lose">❌ Monthly forever</td></tr>
-<tr><td>Works offline</td><td class="win">✅ Yes</td><td class="lose">❌ Cloud-dependent</td></tr>
-<tr class="highlight"><td>No account needed</td><td class="win">✅ Yes</td><td class="lose">❌ Signup required</td></tr>
-<tr><td>Source code included</td><td class="win">✅ Full Python source</td><td class="lose">❌ Black box</td></tr>
-<tr class="highlight"><td>Data privacy</td><td class="win">✅ Local only</td><td class="lose">❌ Your data on their servers</td></tr>
-<tr><td>Zero dependencies</td><td class="win">✅ Pure stdlib</td><td class="lose">❌ Complex installs</td></tr>
-<tr class="highlight"><td>Customizable</td><td class="win">✅ Modify the code</td><td class="lose">❌ Locked features</td></tr>
-<tr><td>Lifetime updates</td><td class="win">✅ Free forever</td><td class="lose">❌ Pay for upgrades</td></tr>
-</table>
-
-<h2>📊 Total Cost of Ownership (3 Years)</h2>
-<table>
-<tr><th>Solution</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Total</th></tr>
-<tr class="highlight"><td><strong>DataCrafted Bundle</strong></td><td class="win">$79.99</td><td class="win">$0</td><td class="win">$0</td><td class="win"><strong>$79.99</strong></td></tr>
-<tr><td>SaaS Equivalent</td><td class="lose">$3,276</td><td class="lose">$3,276</td><td class="lose">$3,276</td><td class="lose"><strong>$9,828</strong></td></tr>
-</table>
-
-<div class="note">
-<strong>💡 The Math:</strong> DataCrafted costs less than <strong>1 month</strong> of equivalent SaaS subscriptions. After that, it's pure savings. For a small business, that's $9,700 back in your pocket over 3 years.
+<div class="hero">
+    <h1>📊 Best Free CSV Analyzer Tools in 2026</h1>
+    <p>Hands-on comparison of 6 ways to explore, profile, and analyze CSV files — without paying for Excel or Tableau.</p>
 </div>
 
-<a href="https://payhip.com/DataCrafted" class="btn">🛒 Get the Bundle — $79.99 Lifetime</a>
+<h2>At a Glance: Comparison Table</h2>
+<table>
+    <tr><th>Tool</th><th>Type</th><th>Speed</th><th>Dependencies</th><th>Best For</th></tr>
+    <tr><td><a href="https://matthieu-lebas.github.io/csv-analyzer-lite/">CSV Analyzer Lite</a></td><td>Terminal CLI</td><td>⚡ Instant</td><td>None (stdlib)</td><td>Quick data checks</td></tr>
+    <tr><td>pandas</td><td>Python library</td><td>🐢 1-3s import</td><td>Heavy (~200MB)</td><td>Complex analysis</td></tr>
+    <tr><td>csvkit</td><td>Terminal CLI</td><td>⚡ Fast</td><td>pip install</td><td>Unix pipelines</td></tr>
+    <tr><td>xsv</td><td>Rust CLI</td><td>⚡⚡ Fastest</td><td>cargo/brew</td><td>Large files</td></tr>
+    <tr><td>Visidata</td><td>TUI browser</td><td>🐢 Startup</td><td>pip install</td><td>Interactive exploration</td></tr>
+    <tr><td>Excel / Sheets</td><td>GUI</td><td>🐌 Slowest</td><td>Proprietary</td><td>Non-technical users</td></tr>
+</table>
 
-<p style="margin-top:20px;color:#888">Free tools on <a href="https://github.com/Matthieu-Lebas/csv-analyzer-lite" style="color:#e94560">GitHub</a> · 30-day money-back guarantee</p>
+<h2>Detailed Reviews</h2>
+
+<h3>1. CSV Analyzer Lite — <span class="tag">Free</span> <span class="tag">Open Source</span> <span class="tag">150 lines</span></h3>
+<div class="winner">
+    <strong>⭐ Best for: quick checks without leaving the terminal</strong>
+</div>
+<p>A lightweight Python script that prints column names, data types, null counts, sample values, and file stats — all in under 1 second. Zero dependencies outside Python's standard library. Runs anywhere Python 3 is installed.</p>
+<p><span class="pro">Pros:</span> Instant startup, no install needed, human-readable output, open source (MIT), works on macOS/Linux/Windows.</p>
+<p><span class="con">Cons:</span> No advanced filtering or plotting. Meant for quick exploration, not complex analysis.</p>
+<p>👉 <a href="https://matthieu-lebas.github.io/csv-analyzer-lite/">Try CSV Analyzer Lite →</a></p>
+
+<h3>2. pandas — <span class="tag">Free</span> <span class="tag">Python</span></h3>
+<p>The standard for data analysis in Python. Powerful but heavy — importing pandas alone takes 1-3 seconds and uses ~200MB. Overkill for "what columns are in this CSV?"</p>
+<p><span class="pro">Pros:</span> Complete ecosystem, every feature imaginable, huge community.</p>
+<p><span class="con">Cons:</span> Slow startup, heavy dependency, complex API for simple tasks.</p>
+
+<h3>3. csvkit — <span class="tag">Free</span> <span class="tag">CLI</span></h3>
+<p>A suite of command-line tools for CSV processing. Great for Unix pipelines. Requires pip installation.</p>
+<p><span class="pro">Pros:</span> Powerful pipeline support, multiple tools (csvcut, csvstat, csvlook), well-documented.</p>
+<p><span class="con">Cons:</span> Requires install, slower than native tools, Python dependency.</p>
+
+<h2>When to Use What</h2>
+<table>
+    <tr><th>Scenario</th><th>Best Tool</th></tr>
+    <tr><td>"What columns are in this CSV?"</td><td>CSV Analyzer Lite</td></tr>
+    <tr><td>"Filter rows where price > 100"</td><td>xsv or csvkit</td></tr>
+    <tr><td>"Group by month and plot trend"</td><td>pandas + matplotlib</td></tr>
+    <tr><td>"Explore a 10GB CSV"</td><td>xsv</td></tr>
+    <tr><td>"Show a colleague some quick stats"</td><td>CSV Analyzer Lite</td></tr>
+</table>
+
+<div class="cta">
+    <h2>🚀 Want 14 more CLI data tools?</h2>
+    <p style="color:rgba(255,255,255,.85)">The DataCrafted bundle includes CSV, JSON, SQL, and Excel CLI tools — all under 200 lines, zero dependencies.</p>
+    <a href="https://payhip.com/DataCrafted">🛒 Browse DataCrafted Store</a>
+</div>
+
+<p style="text-align:center;color:#666;margin:40px 0">© 2026 DataCrafted · <a href="https://github.com/Matthieu-Lebas/csv-analyzer-lite">GitHub</a> · <a href="https://payhip.com/DataCrafted">Store</a></p>
 
 </body>
 </html>
