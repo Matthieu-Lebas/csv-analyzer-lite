@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DataCrafted — Tools Documentation</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,sans-serif;background:#0f0f1a;color:#e0e0e0;line-height:1.6;max-width:900px;margin:0 auto;padding:40px 20px}
+h1{color:#e94560;font-size:2.5em;margin-bottom:10px}
+h2{color:#fff;font-size:1.5em;margin:40px 0 15px;border-bottom:1px solid #2a2a4a;padding-bottom:8px}
+pre{background:#1a1a2e;padding:16px;border-radius:8px;overflow-x:auto;border:1px solid #2a2a4a;font-size:14px}
+code{color:#4ecca3}
+a{color:#e94560}
+.card{background:#1a1a2e;border-radius:8px;padding:20px;margin:16px 0;border:1px solid #2a2a4a}
+.note{background:#2a1a3e;border-left:4px solid #e94560;padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0}
+</style>
+</head>
+<body>
+
+<h1>📚 DataCrafted Docs</h1>
+<p>Quick start guides for every tool. All tools are single .py files — download, run, done.</p>
+
+<div class="note">🛒 <strong>Get all 14 tools:</strong> <a href="https://payhip.com/DataCrafted">payhip.com/DataCrafted</a></div>
+
+<h2>📊 CSV Analyzer Pipeline</h2>
+<div class="card">
+<p>Drop any CSV for instant statistical analysis.</p>
+<pre><code># Basic usage
+python3 analyze.py sales.csv
+
+# With options
+python3 analyze.py data.csv --output report.csv --charts
+
+# Batch mode
+python3 analyze.py *.csv --output-dir ./reports</code></pre>
+<p><strong>Output:</strong> Stats per column (min, max, mean, sum, missing), auto-generated charts, dashboard-ready CSV.</p>
+</div>
+
+<h2>🧹 Data Cleaner Toolkit</h2>
+<div class="card">
+<p>Auto-detect and fix messy data.</p>
+<pre><code>python3 clean.py messy_data.csv
+
+# Auto-fix mode
+python3 clean.py data.csv --fix</code></pre>
+</div>
+
+<h2>🔄 JSON-to-CSV Converter</h2>
+<div class="card">
+<pre><code>python3 json2csv.py data.json
+# Handles nested objects, arrays, mixed structures</code></pre>
+</div>
+
+<h2>📋 Excel Auto-Formatter</h2>
+<div class="card">
+<pre><code>python3 format.py data.csv --theme professional
+# Themes: professional, minimal, dark, colorful</code></pre>
+</div>
+
+<h2>📈 Automated Report Builder</h2>
+<div class="card">
+<pre><code>python3 report.py data.csv
+# Output: styled HTML report with metric cards + tables</code></pre>
+</div>
+
+<h2>💾 SQL Query Generator</h2>
+<div class="card">
+<pre><code>python3 sqlgen.py "top 10 customers by revenue"
+# → SELECT * FROM customers ORDER BY revenue DESC LIMIT 10
+
+python3 sqlgen.py "monthly revenue growth" --dialect postgresql</code></pre>
+</div>
+
+<h2>🕷️ Web Scraper Toolkit</h2>
+<div class="card">
+<pre><code>python3 scrape.py https://example.com/data
+# Extracts tables → CSV automatically</code></pre>
+</div>
+
+<h2>💰 Business Metrics Bundle</h2>
+<div class="card">
+<pre><code>python3 metrics.py --roi 10000 25000
+python3 metrics.py --clv 50 24 200
+python3 metrics.py --cac 5000 100</code></pre>
+</div>
+
+<h2>🔌 API Endpoint Tester</h2>
+<div class="card">
+<pre><code>python3 apitest.py https://api.example.com/users
+python3 apitest.py https://api.example.com/create --method POST --body '{"name":"test"}'</code></pre>
+</div>
+
+<h2>⏰ Cron Task Scheduler</h2>
+<div class="card">
+<pre><code>python3 cronman.py add backup "python3 ~/scripts/backup.py" --every 1h
+python3 cronman.py list
+python3 cronman.py run backup</code></pre>
+</div>
+
+<h2>📊 Dashboard Templates</h2>
+<div class="card">
+<p>Google Sheets templates with pre-built formulas. Open → paste data → KPI dashboard ready.</p>
+</div>
+
+<div class="note" style="margin-top:40px">
+🛒 <strong>Ready to get all tools?</strong> <a href="https://payhip.com/DataCrafted">Browse the store →</a> | 
+⭐ <a href="https://github.com/Matthieu-Lebas/csv-analyzer-lite">Free tools on GitHub →</a>
+</div>
+
+</body>
+</html>
