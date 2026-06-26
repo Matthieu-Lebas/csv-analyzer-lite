@@ -1,5 +1,9 @@
 # CSV Analyzer — Light Edition
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-DataCrafted-e94560?style=flat&logo=github-sponsors)](https://payhip.com/DataCrafted)
+
+
+
 [![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![DataCrafted](https://img.shields.io/badge/Store-DataCrafted-red.svg)](https://payhip.com/DataCrafted)
