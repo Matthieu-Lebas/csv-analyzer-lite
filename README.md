@@ -53,6 +53,24 @@ python3 csv_analyzer.py your_data.csv
 - **Demo mode** — `--demo` flag creates sample data instantly
 - **Zero deps** — Runs on Python 3.6+, nothing to install
 
+## Free Tools Included
+
+This repo now includes **4 free Python tools** — all zero-dependency, single-file, ready to use:
+
+| Tool | File | Description |
+|------|------|-------------|
+| CSV Analyzer | `csv_analyzer.py` | Instant stats from any CSV |
+| JSON→CSV | `tools/json2csv_lite.py` | Flatten nested JSON to CSV |
+| Quick Report | `tools/quickreport_lite.py` | CSV → styled HTML report |
+| SQL Helper | `tools/sqllite_lite.py` | Plain English → SQL query |
+
+```bash
+python3 csv_analyzer.py data.csv
+python3 tools/json2csv_lite.py data.json
+python3 tools/quickreport_lite.py data.csv
+python3 tools/sqllite_lite.py "top 10 customers by revenue"
+```
+
 ## Full Pipeline
 
 Need more power? The **DataCrafted Pro Pipeline** adds:
