@@ -94,6 +94,35 @@ h2{font-size:2em;color:#fff;margin-bottom:30px;text-align:center}
 
 <div class="guarantee">🛡️ 30-day money-back guarantee on all purchases. No questions asked.</div>
 
+<h2>🧪 Try It Live — Paste Your CSV</h2>
+<div style="max-width:700px;margin:0 auto;background:#1a1a2e;border-radius:12px;padding:24px;border:1px solid #2a2a4a">
+<textarea id="csvInput" placeholder="Paste CSV data here...&#10;Example:&#10;Product,Revenue,Units&#10;Widget A,15000,120&#10;Widget B,22000,180&#10;Widget C,18500,95" style="width:100%;height:120px;background:#0f0f1a;color:#e0e0e0;border:1px solid #2a2a4a;border-radius:8px;padding:12px;font-family:monospace;font-size:14px;resize:vertical"></textarea>
+<button onclick="analyzeCSV()" style="margin-top:12px;padding:12px 32px;background:#e94560;color:#fff;border:none;border-radius:8px;font-size:1em;font-weight:700;cursor:pointer">🔍 Analyze Instantly</button>
+<div id="csvResult" style="margin-top:16px;color:#4ecca3;font-family:monospace;font-size:14px;white-space:pre-wrap"></div>
+</div>
+<script>
+function analyzeCSV(){
+  const text = document.getElementById('csvInput').value.trim();
+  if(!text) return document.getElementById('csvResult').innerHTML = 'Paste some CSV data first! 👆';
+  const lines = text.split('\n').filter(l=>l.trim());
+  if(lines.length<2) return document.getElementById('csvResult').innerHTML = 'Need at least a header row + 1 data row';
+  const headers = lines[0].split(',');
+  const rows = lines.slice(1).map(l=>l.split(','));
+  let out = `📊 ${rows.length} rows × ${headers.length} columns\\n\\n`;
+  headers.forEach((h,i)=>{
+    const vals = rows.map(r=>parseFloat((r[i]||'').replace(/[$€%]/g,'').replace(/,/g,''))).filter(v=>!isNaN(v));
+    if(vals.length){
+      const sum=vals.reduce((a,b)=>a+b,0), min=Math.min(...vals), max=Math.max(...vals), avg=sum/vals.length;
+      out += `${h.trim()}: min=${min.toFixed(1)} max=${max.toFixed(1)} avg=${avg.toFixed(1)} sum=${sum.toFixed(1)}\\n`;
+    } else {
+      out += `${h.trim()}: text column (${rows.filter(r=>r[i]&&r[i].trim()).length} values)\\n`;
+    }
+  });
+  out += `\\n✨ Want full reports + dashboards? Get the CSV Analyzer Pipeline ↓`;
+  document.getElementById('csvResult').innerHTML = out;
+}
+</script>
+
 <h2>🆓 Free Tools on GitHub</h2>
 <div class="tools">
 <div class="card"><h3>📊 CSV Analyzer</h3><p>Instant stats from any CSV</p><a href="https://github.com/Matthieu-Lebas/csv-analyzer-lite" class="btn btn-secondary" style="font-size:.9em;padding:8px 20px">GitHub</a></div>
